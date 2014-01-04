@@ -1,4 +1,4 @@
 emoji_dict
 ==========
 
-emoji dict in shell script.
+The commonly used emoji dict in shell script.
