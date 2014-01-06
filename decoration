@@ -1,0 +1,136 @@
+#!/bin/bash - 
+#===============================================================================
+#
+#          FILE: decoration
+# 
+#   DESCRIPTION: 
+# 
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: bigdog (), 
+#  ORGANIZATION: 
+#       CREATED: 2014/01/03 13:42
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+
+
+###################
+# Color config
+###################
+# \033[ : esc ascii
+# : font width
+# : fgcolor 3x
+# : bgcolor 4x
+# : m
+##############################################
+# x in : 
+##############################################
+# 0 (black)
+# 1 (red)
+# 2 (green) 
+# 3 (yellow)
+# 4 (blue)
+# 5 (Magenta,洋红)
+# 6 (cyan,青色)
+# 7 (white)
+##############################################
+
+COLOR_BRIGHT_WHITE="\033[1;97m"
+
+COLOR_BOLD_RED="\033[1;31m"
+COLOR_RED="\033[0;31m"
+
+COLOR_BOLD_GREEN="\033[1;32m"
+COLOR_GREEN="\033[0;32m"
+
+COLOR_BOLD_YELLOW="\033[1;33m"
+COLOR_YELLOW="\033[0;33m"
+
+COLOR_BOLD_BLUE="\033[1;34m"
+COLOR_BLUE="\033[0;34m"
+
+COLOR_BOLD_MAG="\033[1;35m"
+COLOR_MAG="\033[0;35m"
+
+COLOR_BOLD_CYAN="\033[1;36m"
+COLOR_CYAN="\033[0;36m"
+
+COLOR_BOLD_WHITE="\033[1;37m"
+COLOR_WHITE="\033[0;37m"
+
+COLOR_DEF="\033[0m"
+
+EMJ_YES_SMALL_="\xe2\x9c\x93"
+EMJ_YES_="\xe2\x9c\x94"
+EMJ_NO_SMALL_="\xe2\x9c\x97"
+EMJ_NO_="\xe2\x9c\x98"
+
+echo -e "\n==================================================================="
+echo -e "\n  ${EMJ_YES_SMALL_}\tSmall Yes.\n  ${EMJ_NO_SMALL_} \tSmall No.\n"
+echo -e "\n  ${EMJ_YES_} \tNormal Yes.  \n  ${EMJ_NO_}  \tNormal No.\n"
+
+# green  Yes.
+EMJ_BOLD_GREEN_YES_="${COLOR_BOLD_GREEN}${EMJ_YES_}${COLOR_DEF}"
+EMJ_GREEN_YES_="${COLOR_GREEN}${EMJ_YES_}${COLOR_DEF}"
+EMJ_BOLD_GREEN_YES_SMALL_="${COLOR_BOLD_GREEN}${EMJ_YES_SMALL_}${COLOR_DEF}"
+EMJ_GREEN_YES_SMALL_="${COLOR_GREEN}${EMJ_YES_SMALL_}${COLOR_DEF}"
+
+echo -e "\n==================================================================="
+echo -e "\n  ${EMJ_GREEN_YES_} \tGreen Normal Yes."
+echo -e "\n  ${EMJ_BOLD_GREEN_YES_} \tBold Green Normal Yes."
+echo -e "\n  ${EMJ_GREEN_YES_SMALL_} \tGreen Small Yes."
+echo -e "\n  ${EMJ_BOLD_GREEN_YES_SMALL_} \tBold Green Small Yes."
+
+# red Yes.
+EMJ_BOLD_RED_YES_="${COLOR_BOLD_RED}${EMJ_YES_}${COLOR_DEF}"
+EMJ_RED_YES_="${COLOR_RED}${EMJ_YES_}${COLOR_DEF}"
+EMJ_BOLD_RED_YES_SMALL_="${COLOR_BOLD_RED}${EMJ_YES_SMALL_}${COLOR_DEF}"
+EMJ_RED_YES_SMALL_="${COLOR_RED}${EMJ_YES_SMALL_}${COLOR_DEF}"
+
+echo -e "\n==================================================================="
+echo -e "\n  ${EMJ_RED_YES_} \tRed Normal Yes."
+echo -e "\n  ${EMJ_BOLD_RED_YES_} \tBold Red Normal Yes."
+echo -e "\n  ${EMJ_RED_YES_SMALL_} \tRed Small Yes."
+echo -e "\n  ${EMJ_BOLD_RED_YES_SMALL_} \tBold Red Small Yes."
+
+# red No.
+EMJ_GREEN_NO_="${COLOR_GREEN}${EMJ_NO_}${COLOR_DEF}"
+EMJ_GREEN_NO_SMALL_="${COLOR_GREEN}${EMJ_NO_SMALL_}${COLOR_DEF}"
+EMJ_BOLD_GREEN_NO_="${COLOR_BOLD_GREEN}${EMJ_NO_}${COLOR_DEF}"
+EMJ_BOLD_GREEN_NO_SMALL_="${COLOR_BOLD_GREEN}${EMJ_NO_SMALL_}${COLOR_DEF}"
+
+echo -e "\n==================================================================="
+echo -e "\n  ${EMJ_GREEN_NO_} \tGreen Normal No."
+echo -e "\n  ${EMJ_BOLD_GREEN_NO_} \tBold Green Normal No."
+echo -e "\n  ${EMJ_GREEN_NO_SMALL_} \tGreen Small No."
+echo -e "\n  ${EMJ_BOLD_GREEN_NO_SMALL_} \tBold Green Small No."
+
+
+# red No.
+EMJ_RED_NO_="${COLOR_RED}${EMJ_NO_}${COLOR_DEF}"
+EMJ_RED_NO_SMALL_="${COLOR_RED}${EMJ_NO_SMALL_}${COLOR_DEF}"
+EMJ_BOLD_RED_NO_="${COLOR_BOLD_RED}${EMJ_NO_}${COLOR_DEF}"
+EMJ_BOLD_RED_NO_SMALL_="${COLOR_BOLD_RED}${EMJ_NO_SMALL_}${COLOR_DEF}"
+
+echo -e "\n==================================================================="
+echo -e "\n  ${EMJ_RED_NO_} \tRed Normal No."
+echo -e "\n  ${EMJ_BOLD_RED_NO_} \tBold Red Normal No."
+echo -e "\n  ${EMJ_RED_NO_SMALL_} \tRed Small No."
+echo -e "\n  ${EMJ_BOLD_RED_NO_SMALL_} \tBold Red Small No."
+
+EMJ_YELLOW_YES_="${COLOR_YELLOW}${EMJ_YES_}${COLOR_DEF}"
+EMJ_CYAN_YES_="${COLOR_CYAN}${EMJ_YES_}${COLOR_DEF}"
+EMJ_BLUE_YES_="${COLOR_BLUE}${EMJ_YES_}${COLOR_DEF}"
+EMJ_MAG_YES_="${COLOR_MAG}${EMJ_YES_}${COLOR_DEF}"
+echo -e "\n==================================================================="
+echo -e "\n${COLOR_BRIGHT_WHITE} Other Color ${COLOR_DEF}:"
+echo -e "\n  ${EMJ_YELLOW_YES_} \tYellow Normal Yes."
+echo -e "\n  ${EMJ_CYAN_YES_} \tCyan Normal Yes."
+echo -e "\n  ${EMJ_BLUE_YES_} \tBlue Normal Yes."
+echo -e "\n  ${EMJ_MAG_YES_} \tMagenta Normal Yes."
+echo -e "\n\n"
+
