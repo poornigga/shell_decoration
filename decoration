@@ -17,6 +17,30 @@
 
 set -o nounset                              # Treat unset variables as an error
 
+###################
+# emoji define
+###################
+EMJ_YES_SMALL_="\xe2\x9c\x93"
+EMJ_YES_="\xe2\x9c\x94"
+EMJ_NO_SMALL_="\xe2\x9c\x97"
+EMJ_NO_="\xe2\x9c\x98"
+EMJ_RIGHT_ARROW="\xe2\x9e\xa1"
+EMJ_8="\x38\xE2\x83\xA3"
+EMJ_9="\x39\xE2\x83\xA3"
+EMJ_7="\x37\xE2\x83\xA3"
+EMJ_6="\x36\xE2\x83\xA3"
+EMJ_1="\x31\xE2\x83\xA3"
+EMJ_0="\x30\xE2\x83\xA3"
+EMJ_2="\x32\xE2\x83\xA3"
+EMJ_3="\x33\xE2\x83\xA3"
+EMJ_5="\x35\xE2\x83\xA3"
+EMJ_4="\x34\xE2\x83\xA3"
+EMJ_sl="\x23\xE2\x83\xA3"
+EMJ_TM="\xE2\x84\xA2"
+EMJ_I="\xE2\x84\xB9"
+EMJ_M="\xE2\x93\x82"
+
+echo -ne "\n${EMJ_RIGHT_ARROW}"
 
 ###################
 # Color config
@@ -63,11 +87,6 @@ COLOR_BOLD_WHITE="\033[1;37m"
 COLOR_WHITE="\033[0;37m"
 
 COLOR_DEF="\033[0m"
-
-EMJ_YES_SMALL_="\xe2\x9c\x93"
-EMJ_YES_="\xe2\x9c\x94"
-EMJ_NO_SMALL_="\xe2\x9c\x97"
-EMJ_NO_="\xe2\x9c\x98"
 
 echo -e "\n==================================================================="
 echo -e "\n  ${EMJ_YES_SMALL_}\tSmall Yes.\n  ${EMJ_NO_SMALL_} \tSmall No.\n"
