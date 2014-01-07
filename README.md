@@ -10,3 +10,6 @@ Shell Decoration
 
 ![image](screenshots/yes_no.png)
 
+
+![image](screenshots/yes_no2.png)
+
