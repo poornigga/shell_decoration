@@ -10,7 +10,7 @@ Shell Decoration
 2. color.
 
 
-## useage
+## usage
 
 move decoration file to /path/to/
 
