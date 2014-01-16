@@ -20,7 +20,8 @@ set -o nounset                              # Treat unset variables as an error
 
 . ./decoration
 
-echo -ne "\n${EMJ_RIGHT_ARROW}"
+CLEAR_SCREEN="\x1b[H\x1b[2J"
+echo -ne "\n${CLEAR_SCREEN}"
 
 echo -e "\n==================================================================="
 echo -e "\n  ${EMJ_YES_SMALL_}\tSmall Yes.\n  ${EMJ_NO_SMALL_} \tSmall No.\n"
